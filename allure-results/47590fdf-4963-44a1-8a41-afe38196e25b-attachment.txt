@@ -1,4 +1,0 @@
-Executing beforeEach Block
-Paractice 2 execution started
-Swag Labs
-Paractice 2 execution Ended
