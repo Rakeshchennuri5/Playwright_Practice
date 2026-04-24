@@ -3,10 +3,10 @@ import{test, expect} from "@playwright/test"
 test("Alert dailog Handelings", async({page})=>{
     await page.goto("https://the-internet.herokuapp.com/javascript_alerts")
 
-    page.on("dialog", dialog =>{
+    page.on("dialog", async dialog => {
         expect(dialog.type()).toBe("alert");
         expect(dialog.message()).toEqual("I am a JS Alert");
-        dialog.accept();
+        await dialog.accept();
     })
     await page.getByRole('button',{name : "Click for JS Alert"}).click()
     await expect(page.locator("#result")).toHaveText("You successfully clicked an alert")

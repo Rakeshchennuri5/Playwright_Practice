@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:dev": "cross-env Test_ENV=dev npx playwright test tests/envSetup.spec.ts",
+    "test:sit": "cross-env Test_ENV=sit npx playwright test tests/envSetup.spec.ts",
+    "test:uat": "cross-env Test_ENV=uat npx playwright test tests/envSetup.spec.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.58.2",
-    "@types/node": "^25.0.3"
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.0.3",
+    "allure-playwright": "^3.7.1"
+  },
+  "dependencies": {
+    "cross-env": "^10.1.0",
+    "csv-parse": "^6.2.1",
+    "dotenv": "^17.4.2"
   }
 }

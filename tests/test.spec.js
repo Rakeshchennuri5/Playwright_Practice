@@ -55,10 +55,10 @@ test("Reverse_each_word_in_a_sentence",async()=>{
     console.log('sentence_of_Arrya: ', sentence_of_Arrya);
    let word=""
     for(let i=sentence_of_Arrya.length-1;i>=0;i--){
-       word += sentence_of_Arrya[i]
+       word += sentence_of_Arrya[i]+" "
     }
     console.log("Reverse_word :"+ word)
-})
+}) 
 /* Checking_Given_String_is_Palindrom
 */
 test("Checking_Given_String_is_Palindrom",async()=>{

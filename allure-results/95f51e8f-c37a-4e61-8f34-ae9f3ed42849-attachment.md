@@ -1,0 +1,1447 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: iFrameHandelings.spec.js >> iFrame handling with Nmae
+- Location: tests\iFrameHandelings.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 15000ms exceeded.
+```
+
+```
+Tearing down "context" exceeded the test timeout of 15000ms.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic:
+    - generic [ref=e2]:
+      - link "Home link" [ref=e3] [cursor=pointer]:
+        - /url: https://www.w3schools.com
+        - generic [ref=e4]: 
+      - navigation [ref=e5]:
+        - button "Tutorials" [ref=e6] [cursor=pointer]:
+          - text: Tutorials
+          - generic [ref=e7]: 
+          - text: 
+        - button "References" [ref=e8] [cursor=pointer]:
+          - text: References
+          - generic [ref=e9]: 
+          - text: 
+        - button "Exercises" [ref=e10] [cursor=pointer]:
+          - text: Exercises
+          - generic [ref=e11]: 
+          - text: 
+        - button "Certificates" [ref=e12] [cursor=pointer]:
+          - text: Certificates
+          - generic [ref=e13]: 
+          - text: 
+      - text:  
+      - generic [ref=e15]:
+        - generic [ref=e16]: Search field
+        - textbox "Search field" [ref=e17]:
+          - /placeholder: Search...
+        - button "Button to search" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+      - button "All our services" [ref=e22] [cursor=pointer]:
+        - img [ref=e23]
+      - generic [ref=e25]:
+        - button "Sign in to your account" [ref=e26] [cursor=pointer]: Sign In
+        - link "W3Schools Certificates" [ref=e27] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/course-catalog
+          - text: Get Certified
+        - link "Become a PLUS user and unlock powerful features" [ref=e28] [cursor=pointer]:
+          - /url: https://order.w3schools.com/plans
+          - text: Upgrade
+        - link "Contact us about W3Schools Academy for educational institutions" [ref=e29] [cursor=pointer]:
+          - /url: /academy/index.php
+          - text: Teachers
+        - link "Get Your Own Website With W3Schools Spaces" [ref=e30] [cursor=pointer]:
+          - /url: /spaces/index.php
+          - text: Spaces
+        - link "W3Schools Bootcamps" [ref=e31] [cursor=pointer]:
+          - /url: /bootcamp/index.php
+          - text: Bootcamps
+    - text:      
+    - generic:
+      - generic: 
+  - generic [ref=e35]:
+    - generic [ref=e36] [cursor=pointer]: ❯
+    - generic:
+      - generic: 
+    - link "HTML" [ref=e37] [cursor=pointer]:
+      - /url: /html/default.asp
+    - link "CSS" [ref=e38] [cursor=pointer]:
+      - /url: /css/default.asp
+    - link "JAVASCRIPT" [ref=e39] [cursor=pointer]:
+      - /url: /js/default.asp
+    - link "SQL" [ref=e40] [cursor=pointer]:
+      - /url: /sql/default.asp
+    - link "PYTHON" [ref=e41] [cursor=pointer]:
+      - /url: /python/default.asp
+    - link "JAVA" [ref=e42] [cursor=pointer]:
+      - /url: /java/default.asp
+    - link "PHP" [ref=e43] [cursor=pointer]:
+      - /url: /php/default.asp
+    - link "HOW TO" [ref=e44] [cursor=pointer]:
+      - /url: /howto/default.asp
+    - link "W3.CSS" [ref=e45] [cursor=pointer]:
+      - /url: /w3css/default.asp
+    - link "C" [ref=e46] [cursor=pointer]:
+      - /url: /c/index.php
+    - link "C++" [ref=e47] [cursor=pointer]:
+      - /url: /cpp/default.asp
+    - link "C#" [ref=e48] [cursor=pointer]:
+      - /url: /cs/index.php
+    - link "BOOTSTRAP" [ref=e49] [cursor=pointer]:
+      - /url: /bootstrap/bootstrap_ver.asp
+    - link "REACT" [ref=e50] [cursor=pointer]:
+      - /url: /react/default.asp
+    - link "MYSQL" [ref=e51] [cursor=pointer]:
+      - /url: /mysql/default.asp
+    - link "JQUERY" [ref=e52] [cursor=pointer]:
+      - /url: /jquery/default.asp
+    - link "EXCEL" [ref=e53] [cursor=pointer]:
+      - /url: /excel/index.php
+    - link "XML" [ref=e54] [cursor=pointer]:
+      - /url: /xml/default.asp
+    - link "DJANGO" [ref=e55] [cursor=pointer]:
+      - /url: /django/index.php
+    - link "NUMPY" [ref=e56] [cursor=pointer]:
+      - /url: /python/numpy/default.asp
+    - link "PANDAS" [ref=e57] [cursor=pointer]:
+      - /url: /python/pandas/default.asp
+    - link "NODEJS" [ref=e58] [cursor=pointer]:
+      - /url: /nodejs/default.asp
+    - link "DSA" [ref=e59] [cursor=pointer]:
+      - /url: /dsa/index.php
+    - link "TYPESCRIPT" [ref=e60] [cursor=pointer]:
+      - /url: /typescript/index.php
+    - link "ANGULAR" [ref=e61] [cursor=pointer]:
+      - /url: /angular/default.asp
+    - link "ANGULARJS" [ref=e62] [cursor=pointer]:
+      - /url: /angularjs/default.asp
+    - link "GIT" [ref=e63] [cursor=pointer]:
+      - /url: /git/default.asp
+    - link "POSTGRESQL" [ref=e64] [cursor=pointer]:
+      - /url: /postgresql/index.php
+    - link "MONGODB" [ref=e65] [cursor=pointer]:
+      - /url: /mongodb/index.php
+    - link "ASP" [ref=e66] [cursor=pointer]:
+      - /url: /asp/default.asp
+    - link "AI" [ref=e67] [cursor=pointer]:
+      - /url: /ai/default.asp
+    - link "R" [ref=e68] [cursor=pointer]:
+      - /url: /r/default.asp
+    - link "GO" [ref=e69] [cursor=pointer]:
+      - /url: /go/index.php
+    - link "KOTLIN" [ref=e70] [cursor=pointer]:
+      - /url: /kotlin/index.php
+    - link "SWIFT" [ref=e71] [cursor=pointer]:
+      - /url: /swift/default.asp
+    - link "SASS" [ref=e72] [cursor=pointer]:
+      - /url: /sass/default.asp
+    - link "VUE" [ref=e73] [cursor=pointer]:
+      - /url: /vue/index.php
+    - link "GEN AI" [ref=e74] [cursor=pointer]:
+      - /url: /gen_ai/index.php
+    - link "SCIPY" [ref=e75] [cursor=pointer]:
+      - /url: /python/scipy/index.php
+    - link "AWS" [ref=e76] [cursor=pointer]:
+      - /url: /aws/index.php
+    - link "CYBERSECURITY" [ref=e77] [cursor=pointer]:
+      - /url: /cybersecurity/index.php
+    - link "DATA SCIENCE" [ref=e78] [cursor=pointer]:
+      - /url: /datascience/default.asp
+    - link "INTRO TO PROGRAMMING" [ref=e79] [cursor=pointer]:
+      - /url: /programming/index.php
+    - link "INTRO TO HTML & CSS" [ref=e80] [cursor=pointer]:
+      - /url: /htmlcss/default.asp
+    - link "BASH" [ref=e81] [cursor=pointer]:
+      - /url: /bash/index.php
+    - link "RUST" [ref=e82] [cursor=pointer]:
+      - /url: /rust/index.php
+    - link "TOOLS" [ref=e83] [cursor=pointer]:
+      - /url: /tools/index.php
+  - generic [ref=e85]:
+    - generic [ref=e88]:
+      - heading "HTML Tutorial" [level=2] [ref=e89]
+      - link "HTML HOME" [ref=e90] [cursor=pointer]:
+        - /url: default.asp
+      - link "HTML Introduction" [ref=e91] [cursor=pointer]:
+        - /url: html_intro.asp
+      - link "HTML Editors" [ref=e92] [cursor=pointer]:
+        - /url: html_editors.asp
+      - link "HTML Basic " [ref=e93] [cursor=pointer]:
+        - /url: html_basic.asp
+        - text: HTML Basic
+        - generic: 
+      - link "HTML Elements " [ref=e94] [cursor=pointer]:
+        - /url: html_elements.asp
+        - text: HTML Elements
+        - generic: 
+      - link "HTML Attributes " [ref=e95] [cursor=pointer]:
+        - /url: html_attributes.asp
+        - text: HTML Attributes
+        - generic: 
+      - link "HTML Headings " [ref=e96] [cursor=pointer]:
+        - /url: html_headings.asp
+        - text: HTML Headings
+        - generic: 
+      - link "HTML Paragraphs " [ref=e97] [cursor=pointer]:
+        - /url: html_paragraphs.asp
+        - text: HTML Paragraphs
+        - generic: 
+      - link "HTML Styles " [ref=e98] [cursor=pointer]:
+        - /url: html_styles.asp
+        - text: HTML Styles
+        - generic: 
+      - link "HTML Formatting " [ref=e99] [cursor=pointer]:
+        - /url: html_formatting.asp
+        - text: HTML Formatting
+        - generic: 
+      - link "HTML Quotations " [ref=e100] [cursor=pointer]:
+        - /url: html_quotation_elements.asp
+        - text: HTML Quotations
+        - generic: 
+      - link "HTML Comments " [ref=e101] [cursor=pointer]:
+        - /url: html_comments.asp
+        - text: HTML Comments
+        - generic: 
+      - link "HTML Colors " [ref=e102] [cursor=pointer]:
+        - /url: html_colors.asp
+        - text: HTML Colors
+        - generic: 
+      - link "HTML CSS " [ref=e103] [cursor=pointer]:
+        - /url: html_css.asp
+        - text: HTML CSS
+        - generic: 
+      - link "HTML Links " [ref=e104] [cursor=pointer]:
+        - /url: html_links.asp
+        - text: HTML Links
+        - generic: 
+      - link "HTML Images " [ref=e105] [cursor=pointer]:
+        - /url: html_images.asp
+        - text: HTML Images
+        - generic: 
+      - link "HTML Favicon" [ref=e106] [cursor=pointer]:
+        - /url: html_favicon.asp
+      - link "HTML Page Title" [ref=e107] [cursor=pointer]:
+        - /url: html_page_title.asp
+      - link "HTML Tables " [ref=e108] [cursor=pointer]:
+        - /url: html_tables.asp
+        - text: HTML Tables
+        - generic: 
+      - link "HTML Lists " [ref=e109] [cursor=pointer]:
+        - /url: html_lists.asp
+        - text: HTML Lists
+        - generic: 
+      - link "HTML Block & Inline " [ref=e110] [cursor=pointer]:
+        - /url: html_blocks.asp
+        - text: HTML Block & Inline
+        - generic: 
+      - link "HTML Div " [ref=e111] [cursor=pointer]:
+        - /url: html_div.asp
+        - text: HTML Div
+        - generic: 
+      - link "HTML Classes " [ref=e112] [cursor=pointer]:
+        - /url: html_classes.asp
+        - text: HTML Classes
+        - generic: 
+      - link "HTML Id " [ref=e113] [cursor=pointer]:
+        - /url: html_id.asp
+        - text: HTML Id
+        - generic: 
+      - link "HTML Buttons " [ref=e114] [cursor=pointer]:
+        - /url: html_buttons.asp
+        - text: HTML Buttons
+        - generic: 
+      - link "HTML Iframes " [ref=e115] [cursor=pointer]:
+        - /url: html_iframe.asp
+        - text: HTML Iframes
+        - generic: 
+      - generic [ref=e116]:
+        - link "Iframes" [ref=e117] [cursor=pointer]:
+          - /url: html_iframe.asp
+        - link "Code Challenge" [ref=e118] [cursor=pointer]:
+          - /url: html_challenges_iframes.asp
+      - link "HTML JavaScript " [ref=e119] [cursor=pointer]:
+        - /url: html_scripts.asp
+        - text: HTML JavaScript
+        - generic: 
+      - link "HTML File Paths " [ref=e120] [cursor=pointer]:
+        - /url: html_filepaths.asp
+        - text: HTML File Paths
+        - generic: 
+      - link "HTML Head " [ref=e121] [cursor=pointer]:
+        - /url: html_head.asp
+        - text: HTML Head
+        - generic: 
+      - link "HTML Layout " [ref=e122] [cursor=pointer]:
+        - /url: html_layout.asp
+        - text: HTML Layout
+        - generic: 
+      - link "HTML Responsive " [ref=e123] [cursor=pointer]:
+        - /url: html_responsive.asp
+        - text: HTML Responsive
+        - generic: 
+      - link "HTML Computercode " [ref=e124] [cursor=pointer]:
+        - /url: html_computercode_elements.asp
+        - text: HTML Computercode
+        - generic: 
+      - link "HTML Semantics " [ref=e125] [cursor=pointer]:
+        - /url: html5_semantic_elements.asp
+        - text: HTML Semantics
+        - generic: 
+      - link "HTML Style Guide" [ref=e126] [cursor=pointer]:
+        - /url: html5_syntax.asp
+      - link "HTML Entities " [ref=e127] [cursor=pointer]:
+        - /url: html_entities.asp
+        - text: HTML Entities
+        - generic: 
+      - link "HTML Symbols" [ref=e128] [cursor=pointer]:
+        - /url: html_symbols.asp
+      - link "HTML Emojis" [ref=e129] [cursor=pointer]:
+        - /url: html_emojis.asp
+      - link "HTML Charsets" [ref=e130] [cursor=pointer]:
+        - /url: html_charset.asp
+      - link "HTML URL Encode" [ref=e131] [cursor=pointer]:
+        - /url: html_urlencode.asp
+      - link "HTML vs. XHTML" [ref=e132] [cursor=pointer]:
+        - /url: html_xhtml.asp
+      - heading "HTML Forms" [level=2] [ref=e133]
+      - link "HTML Forms " [ref=e134] [cursor=pointer]:
+        - /url: html_forms.asp
+        - text: HTML Forms
+        - generic: 
+      - link "HTML Form Attributes" [ref=e135] [cursor=pointer]:
+        - /url: html_forms_attributes.asp
+      - link "HTML Form Elements " [ref=e136] [cursor=pointer]:
+        - /url: html_form_elements.asp
+        - text: HTML Form Elements
+        - generic: 
+      - link "HTML Input Types " [ref=e137] [cursor=pointer]:
+        - /url: html_form_input_types.asp
+        - text: HTML Input Types
+        - generic: 
+      - link "HTML Input Attributes" [ref=e138] [cursor=pointer]:
+        - /url: html_form_attributes.asp
+      - link "Input Form Attributes" [ref=e139] [cursor=pointer]:
+        - /url: html_form_attributes_form.asp
+      - heading "HTML Graphics" [level=2] [ref=e140]
+      - link "HTML Canvas " [ref=e141] [cursor=pointer]:
+        - /url: html5_canvas.asp
+        - text: HTML Canvas
+        - generic: 
+      - link "HTML SVG " [ref=e142] [cursor=pointer]:
+        - /url: html5_svg.asp
+        - text: HTML SVG
+        - generic: 
+      - heading "HTML Media" [level=2] [ref=e143]
+      - link "HTML Media" [ref=e144] [cursor=pointer]:
+        - /url: html_media.asp
+      - link "HTML Video " [ref=e145] [cursor=pointer]:
+        - /url: html5_video.asp
+        - text: HTML Video
+        - generic: 
+      - link "HTML Audio " [ref=e146] [cursor=pointer]:
+        - /url: html5_audio.asp
+        - text: HTML Audio
+        - generic: 
+      - link "HTML Plug-ins" [ref=e147] [cursor=pointer]:
+        - /url: html_object.asp
+      - link "HTML YouTube" [ref=e148] [cursor=pointer]:
+        - /url: html_youtube.asp
+      - heading "HTML APIs" [level=2] [ref=e149]
+      - link "HTML Web APIs" [ref=e150] [cursor=pointer]:
+        - /url: html5_api_whatis.asp
+      - link "HTML Geolocation" [ref=e151] [cursor=pointer]:
+        - /url: html5_geolocation.asp
+      - link "HTML Drag and Drop" [ref=e152] [cursor=pointer]:
+        - /url: html5_draganddrop.asp
+      - link "HTML Web Storage" [ref=e153] [cursor=pointer]:
+        - /url: html5_webstorage.asp
+      - link "HTML Web Workers" [ref=e154] [cursor=pointer]:
+        - /url: html5_webworkers.asp
+      - link "HTML SSE" [ref=e155] [cursor=pointer]:
+        - /url: html5_serversentevents.asp
+      - heading "HTML Cert" [level=2] [ref=e156]
+      - link "HTML Certificate" [ref=e157] [cursor=pointer]:
+        - /url: html_exam.asp
+      - heading "HTML Examples" [level=2] [ref=e158]
+      - link "HTML Examples" [ref=e159] [cursor=pointer]:
+        - /url: html_examples.asp
+      - link "HTML Editor" [ref=e160] [cursor=pointer]:
+        - /url: html_editor.asp
+      - link "HTML Quiz" [ref=e161] [cursor=pointer]:
+        - /url: html_quiz.asp
+      - link "HTML Exercises" [ref=e162] [cursor=pointer]:
+        - /url: html_exercises.asp
+      - link "HTML Challenges" [ref=e163] [cursor=pointer]:
+        - /url: html_challenges.asp
+      - link "HTML Website" [ref=e164] [cursor=pointer]:
+        - /url: html_website.asp
+      - link "HTML Syllabus" [ref=e165] [cursor=pointer]:
+        - /url: html_syllabus.asp
+      - link "HTML Study Plan" [ref=e166] [cursor=pointer]:
+        - /url: html_study_plan.asp
+      - link "HTML Interview Prep" [ref=e167] [cursor=pointer]:
+        - /url: html_interview_prep.asp
+      - link "HTML Bootcamp" [ref=e168] [cursor=pointer]:
+        - /url: html_bootcamp.asp
+      - link "HTML Summary" [ref=e169] [cursor=pointer]:
+        - /url: html_summary.asp
+      - link "HTML Accessibility" [ref=e170] [cursor=pointer]:
+        - /url: html_accessibility.asp
+      - heading "HTML References" [level=2] [ref=e171]
+      - link "HTML Tag List" [ref=e172] [cursor=pointer]:
+        - /url: /tags/default.asp
+      - link "HTML Attributes" [ref=e173] [cursor=pointer]:
+        - /url: /tags/ref_attributes.asp
+      - link "HTML Global Attributes" [ref=e174] [cursor=pointer]:
+        - /url: /tags/ref_standardattributes.asp
+      - link "HTML Browser Support" [ref=e175] [cursor=pointer]:
+        - /url: /tags/ref_html_browsersupport.asp
+      - link "HTML Events" [ref=e176] [cursor=pointer]:
+        - /url: /tags/ref_eventattributes.asp
+      - link "HTML Colors" [ref=e177] [cursor=pointer]:
+        - /url: /tags/ref_colornames.asp
+      - link "HTML Canvas" [ref=e178] [cursor=pointer]:
+        - /url: /tags/ref_canvas.asp
+      - link "HTML Audio/Video" [ref=e179] [cursor=pointer]:
+        - /url: /tags/ref_av_dom.asp
+      - link "HTML Doctypes" [ref=e180] [cursor=pointer]:
+        - /url: /tags/ref_html_dtd.asp
+      - link "HTML Character Sets" [ref=e181] [cursor=pointer]:
+        - /url: /tags/ref_charactersets.asp
+      - link "HTML URL Encode" [ref=e182] [cursor=pointer]:
+        - /url: /tags/ref_urlencode.asp
+      - link "HTML Lang Codes" [ref=e183] [cursor=pointer]:
+        - /url: /tags/ref_language_codes.asp
+      - link "HTTP Messages" [ref=e184] [cursor=pointer]:
+        - /url: /tags/ref_httpmessages.asp
+      - link "HTTP Methods" [ref=e185] [cursor=pointer]:
+        - /url: /tags/ref_httpmethods.asp
+      - link "PX to EM Converter" [ref=e186] [cursor=pointer]:
+        - /url: /tags/ref_pxtoemconversion.asp
+      - link "Keyboard Shortcuts" [ref=e187] [cursor=pointer]:
+        - /url: /tags/ref_keyboardshortcuts.asp
+    - generic [ref=e189]:
+      - generic [ref=e190]:
+        - iframe [ref=e195]
+        - heading "HTML Iframes" [level=1] [ref=e196]:
+          - generic "Click to add bookmark" [ref=e197] [cursor=pointer]
+          - text: HTML Iframes
+        - generic [ref=e200]:
+          - link "❮ Previous" [ref=e201] [cursor=pointer]:
+            - /url: html_challenges_buttons.asp
+          - link "Next ❯" [ref=e202] [cursor=pointer]:
+            - /url: html_challenges_iframes.asp
+        - separator [ref=e203]
+        - paragraph [ref=e204]: An HTML iframe is used to display a web page within a web page.
+        - separator [ref=e205]
+        - iframe [active] [ref=e207]:
+          - generic [ref=f2e1]:
+            - button "Search W3Schools" [ref=f2e3] [cursor=pointer]
+            - generic:
+              - generic [ref=f2e4]:
+                - link "Home link" [ref=f2e5] [cursor=pointer]:
+                  - /url: https://www.w3schools.com
+                  - generic [ref=f2e6]: 
+                - navigation [ref=f2e7]:
+                  - button "Tutorials" [ref=f2e8] [cursor=pointer]:
+                    - text: Tutorials
+                    - generic [ref=f2e9]: 
+                    - text: 
+                  - button "References" [ref=f2e10] [cursor=pointer]:
+                    - text: References
+                    - generic [ref=f2e11]: 
+                    - text: 
+                  - button "Exercises" [ref=f2e12] [cursor=pointer]:
+                    - text: Exercises
+                    - generic [ref=f2e13]: 
+                    - text: 
+                  - text:  
+                - text:  
+                - generic [ref=f2e14]:
+                  - generic [ref=f2e15]:
+                    - generic [ref=f2e16]: Search field
+                    - textbox "Search field" [active] [ref=f2e17]:
+                      - /placeholder: Search...
+                      - text: test cod automate
+                    - button "Button to search" [ref=f2e18] [cursor=pointer]:
+                      - img [ref=f2e19]
+                  - button "Close search field" [ref=f2e22] [cursor=pointer]:
+                    - generic [ref=f2e23]: ×
+                - button "All our services" [ref=f2e25] [cursor=pointer]:
+                  - img [ref=f2e26]
+                - generic [ref=f2e28]:
+                  - button "Sign in to your account" [ref=f2e29] [cursor=pointer]: Sign In
+                  - link "W3Schools Certificates" [ref=f2e30] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/course-catalog
+                    - text: Get Certified
+                  - link "Become a PLUS user and unlock powerful features" [ref=f2e31] [cursor=pointer]:
+                    - /url: https://order.w3schools.com/plans
+                    - text: Upgrade
+                  - link "Contact us about W3Schools Academy for educational institutions" [ref=f2e32] [cursor=pointer]:
+                    - /url: /academy/index.php
+                    - text: Teachers
+                  - link "Get Your Own Website With W3Schools Spaces" [ref=f2e33] [cursor=pointer]:
+                    - /url: /spaces/index.php
+                    - text: Spaces
+                  - link "W3Schools Bootcamps" [ref=f2e34] [cursor=pointer]:
+                    - /url: /bootcamp/index.php
+                    - text: Bootcamps
+              - text:      
+              - generic:
+                - generic: 
+            - generic [ref=f2e38]:
+              - link "" [ref=f2e40] [cursor=pointer]:
+                - /url: javascript:void(0);
+              - link "HTML" [ref=f2e41] [cursor=pointer]:
+                - /url: /html/default.asp
+              - link "CSS" [ref=f2e42] [cursor=pointer]:
+                - /url: /css/default.asp
+              - link "JAVASCRIPT" [ref=f2e43] [cursor=pointer]:
+                - /url: /js/default.asp
+              - link "SQL" [ref=f2e44] [cursor=pointer]:
+                - /url: /sql/default.asp
+              - link "PYTHON" [ref=f2e45] [cursor=pointer]:
+                - /url: /python/default.asp
+              - link "JAVA" [ref=f2e46] [cursor=pointer]:
+                - /url: /java/default.asp
+              - link "PHP" [ref=f2e47] [cursor=pointer]:
+                - /url: /php/default.asp
+              - link "HOW TO" [ref=f2e48] [cursor=pointer]:
+                - /url: /howto/default.asp
+              - link "W3.CSS" [ref=f2e49] [cursor=pointer]:
+                - /url: /w3css/default.asp
+              - link "C" [ref=f2e50] [cursor=pointer]:
+                - /url: /c/index.php
+              - link "C++" [ref=f2e51] [cursor=pointer]:
+                - /url: /cpp/default.asp
+              - link "C#" [ref=f2e52] [cursor=pointer]:
+                - /url: /cs/index.php
+              - link "BOOTSTRAP" [ref=f2e53] [cursor=pointer]:
+                - /url: /bootstrap/bootstrap_ver.asp
+              - link "REACT" [ref=f2e54] [cursor=pointer]:
+                - /url: /react/default.asp
+              - link "MYSQL" [ref=f2e55] [cursor=pointer]:
+                - /url: /mysql/default.asp
+              - link "JQUERY" [ref=f2e56] [cursor=pointer]:
+                - /url: /jquery/default.asp
+              - link "EXCEL" [ref=f2e57] [cursor=pointer]:
+                - /url: /excel/index.php
+              - link "XML" [ref=f2e58] [cursor=pointer]:
+                - /url: /xml/default.asp
+              - link "DJANGO" [ref=f2e59] [cursor=pointer]:
+                - /url: /django/index.php
+              - link "NUMPY" [ref=f2e60] [cursor=pointer]:
+                - /url: /python/numpy/default.asp
+              - link "PANDAS" [ref=f2e61] [cursor=pointer]:
+                - /url: /python/pandas/default.asp
+              - link "NODEJS" [ref=f2e62] [cursor=pointer]:
+                - /url: /nodejs/default.asp
+              - link "DSA" [ref=f2e63] [cursor=pointer]:
+                - /url: /dsa/index.php
+              - link "TYPESCRIPT" [ref=f2e64] [cursor=pointer]:
+                - /url: /typescript/index.php
+              - link "ANGULAR" [ref=f2e65] [cursor=pointer]:
+                - /url: /angular/default.asp
+              - link "ANGULARJS" [ref=f2e66] [cursor=pointer]:
+                - /url: /angularjs/default.asp
+              - link "GIT" [ref=f2e67] [cursor=pointer]:
+                - /url: /git/default.asp
+              - link "POSTGRESQL" [ref=f2e68] [cursor=pointer]:
+                - /url: /postgresql/index.php
+              - link "MONGODB" [ref=f2e69] [cursor=pointer]:
+                - /url: /mongodb/index.php
+              - link "ASP" [ref=f2e70] [cursor=pointer]:
+                - /url: /asp/default.asp
+              - link "AI" [ref=f2e71] [cursor=pointer]:
+                - /url: /ai/default.asp
+              - link "R" [ref=f2e72] [cursor=pointer]:
+                - /url: /r/default.asp
+              - link "GO" [ref=f2e73] [cursor=pointer]:
+                - /url: /go/index.php
+              - link "KOTLIN" [ref=f2e74] [cursor=pointer]:
+                - /url: /kotlin/index.php
+              - link "SWIFT" [ref=f2e75] [cursor=pointer]:
+                - /url: /swift/default.asp
+              - link "SASS" [ref=f2e76] [cursor=pointer]:
+                - /url: /sass/default.asp
+              - link "VUE" [ref=f2e77] [cursor=pointer]:
+                - /url: /vue/index.php
+              - link "GEN AI" [ref=f2e78] [cursor=pointer]:
+                - /url: /gen_ai/index.php
+              - link "SCIPY" [ref=f2e79] [cursor=pointer]:
+                - /url: /python/scipy/index.php
+              - link "AWS" [ref=f2e80] [cursor=pointer]:
+                - /url: /aws/index.php
+              - link "CYBERSECURITY" [ref=f2e81] [cursor=pointer]:
+                - /url: /cybersecurity/index.php
+              - link "DATA SCIENCE" [ref=f2e82] [cursor=pointer]:
+                - /url: /datascience/default.asp
+              - link "INTRO TO PROGRAMMING" [ref=f2e83] [cursor=pointer]:
+                - /url: /programming/index.php
+              - link "INTRO TO HTML & CSS" [ref=f2e84] [cursor=pointer]:
+                - /url: /htmlcss/default.asp
+              - link "BASH" [ref=f2e85] [cursor=pointer]:
+                - /url: /bash/index.php
+              - link "RUST" [ref=f2e86] [cursor=pointer]:
+                - /url: /rust/index.php
+              - link "TOOLS" [ref=f2e87] [cursor=pointer]:
+                - /url: /tools/index.php
+            - generic [ref=f2e89]:
+              - text:                                    
+              - generic [ref=f2e91]:
+                - generic [ref=f2e92]:
+                  - iframe [ref=f2e97]
+                  - heading "HTML Tutorial" [level=1] [ref=f2e98]:
+                    - generic "Click to add bookmark" [ref=f2e99] [cursor=pointer]
+                    - text: HTML Tutorial
+                  - generic [ref=f2e102]:
+                    - link "❮ Home" [ref=f2e103] [cursor=pointer]:
+                      - /url: /default.asp
+                    - link "Next ❯" [ref=f2e104] [cursor=pointer]:
+                      - /url: html_intro.asp
+                  - separator [ref=f2e105]
+                  - heading "Learn HTML" [level=2] [ref=f2e106]
+                  - paragraph [ref=f2e107]: HTML is the standard markup language for Web pages.
+                  - paragraph [ref=f2e108]: With HTML you can create your own Website.
+                  - paragraph [ref=f2e109]: HTML is easy to learn - You will enjoy it!
+                  - generic [ref=f2e111]:
+                    - generic [ref=f2e112]:
+                      - heading "HTML Tutorial" [level=2] [ref=f2e113]
+                      - paragraph [ref=f2e114]:
+                        - text: Study our HTML Tutorial for free,
+                        - text: no registration needed.
+                      - link "Learn HTML Now »" [ref=f2e115] [cursor=pointer]:
+                        - /url: html_intro.asp
+                    - generic [ref=f2e116]: OR
+                    - generic [ref=f2e117]:
+                      - heading "HTML Certificate" [level=2] [ref=f2e118]
+                      - paragraph [ref=f2e119]:
+                        - text: Upgrade your learning with our
+                        - text: interactive HTML Course and Get Certified.
+                      - link "Get Certified" [ref=f2e120] [cursor=pointer]:
+                        - /url: https://campus.w3schools.com/collections/course-catalog/products/html-course
+                        - img [ref=f2e121]
+                        - text: Get Certified
+                  - generic [ref=f2e131]:
+                    - link "Sign in" [ref=f2e132] [cursor=pointer]:
+                      - /url: https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fwww.w3schools.com%2Fhtml%2Fdefault.asp
+                    - generic [ref=f2e133]: to track your progress
+                    - link "Sign in with Google" [ref=f2e135] [cursor=pointer]:
+                      - /url: https://auth.w3spaces.com/oauth2/authorize?redirect_uri=https%3A%2F%2Fprofile.w3schools.com%2Fsocial-login&response_type=code&client_id=d1grqml0emh7votkb0gtrrn0&identity_provider=Google&scope=openid%20aws.cognito.signin.user.admin&state=us2P9wX7ikm6O1XWjurz0qyOfUXWWP1M&final_return=https%3A%2F%2Fwww.w3schools.com%2Fhtml%2Fdefault.asp
+                      - img [ref=f2e136]
+                    - link "Sign in with Facebook" [ref=f2e142] [cursor=pointer]:
+                      - /url: https://auth.w3spaces.com/oauth2/authorize?redirect_uri=https%3A%2F%2Fprofile.w3schools.com%2Fsocial-login&response_type=code&client_id=d1grqml0emh7votkb0gtrrn0&identity_provider=Facebook&scope=openid%20aws.cognito.signin.user.admin&state=nZEfPZV5EZocXcLHHhbDLMiNeZEbFvS3&final_return=https%3A%2F%2Fwww.w3schools.com%2Fhtml%2Fdefault.asp
+                      - img [ref=f2e143]
+                    - link "Sign in with Github" [ref=f2e145] [cursor=pointer]:
+                      - /url: https://auth.w3spaces.com/oauth2/authorize?redirect_uri=https%3A%2F%2Fprofile.w3schools.com%2Fsocial-login&response_type=code&client_id=d1grqml0emh7votkb0gtrrn0&identity_provider=Github&scope=openid%20aws.cognito.signin.user.admin&state=hg7Sr8m8khldR67O1ynByK7SEuCe0tvE&final_return=https%3A%2F%2Fwww.w3schools.com%2Fhtml%2Fdefault.asp
+                      - img [ref=f2e146]
+                  - separator [ref=f2e148]
+                  - heading "Learning by Examples" [level=2] [ref=f2e149]
+                  - paragraph [ref=f2e150]: "With our \"Try it Yourself\" editor, you can edit the HTML code and view the result in the browser:"
+                  - generic [ref=f2e151]:
+                    - heading "Example" [level=3] [ref=f2e152]
+                    - generic [ref=f2e153]:
+                      - text: <!DOCTYPE html>
+                      - generic [ref=f2e154]: <html>
+                      - generic [ref=f2e155]: <head>
+                      - generic [ref=f2e156]: <title>
+                      - text: Page Title
+                      - generic [ref=f2e157]: </title>
+                      - generic [ref=f2e158]: </head>
+                      - generic [ref=f2e159]: <body>
+                      - generic [ref=f2e160]: <h1>
+                      - text: This is a Heading
+                      - generic [ref=f2e161]: </h1>
+                      - generic [ref=f2e162]: <p>
+                      - text: This is a paragraph.
+                      - generic [ref=f2e163]: </p>
+                      - generic [ref=f2e164]: </body>
+                      - generic [ref=f2e165]: </html>
+                    - link "Try it Yourself »" [ref=f2e166] [cursor=pointer]:
+                      - /url: tryit.asp?filename=tryhtml_default
+                  - paragraph [ref=f2e167]:
+                    - strong [ref=f2e168]: Click on the "Try it Yourself" button to see how it works.
+                  - separator [ref=f2e169]
+                  - heading "HTML Examples" [level=2] [ref=f2e170]
+                  - paragraph [ref=f2e171]: This tutorial supplements all explanations with clarifying examples.
+                  - paragraph [ref=f2e172]:
+                    - link "See all HTML Examples" [ref=f2e173] [cursor=pointer]:
+                      - /url: html_examples.asp
+                  - separator [ref=f2e174]
+                  - paragraph [ref=f2e177]:
+                    - link "REMOVE ADS" [ref=f2e178] [cursor=pointer]:
+                      - /url: https://order.w3schools.com/plans
+                  - separator [ref=f2e179]
+                  - heading "HTML Exercises" [level=2] [ref=f2e180]
+                  - paragraph [ref=f2e181]: Many chapters in this tutorial end with an exercise where you can check your level of knowledge.
+                  - generic [ref=f2e182]:
+                    - heading "Exercise ?" [level=2] [ref=f2e183]:
+                      - text: Exercise
+                      - generic [ref=f2e185] [cursor=pointer]: "?"
+                    - paragraph [ref=f2e186]: What is a correct syntax for an HTML hyperlink?
+                    - generic [ref=f2e187]:
+                      - generic [ref=f2e188] [cursor=pointer]:
+                        - radio "<a href='/home.htm'>Visit W3Schools.com!</a>" [ref=f2e189]
+                        - code [ref=f2e191]: <a href='/home.htm'>Visit W3Schools.com!</a>
+                      - generic [ref=f2e192] [cursor=pointer]:
+                        - radio "<link href='/home.htm'>Visit W3Schools.com!</link>" [ref=f2e193]
+                        - code [ref=f2e195]: <link href='/home.htm'>Visit W3Schools.com!</link>
+                      - generic [ref=f2e196] [cursor=pointer]:
+                        - radio "<alink href='/home.htm'>Visit W3Schools.com!</alink>" [ref=f2e197]
+                        - code [ref=f2e199]: <alink href='/home.htm'>Visit W3Schools.com!</alink>
+                      - button "Submit Answer »" [ref=f2e200] [cursor=pointer]
+                  - paragraph [ref=f2e201]:
+                    - link "See all HTML Exercises" [ref=f2e202] [cursor=pointer]:
+                      - /url: html_exercises.asp
+                  - separator [ref=f2e203]
+                  - heading "HTML Quiz Test" [level=2] [ref=f2e204]
+                  - paragraph [ref=f2e205]: Test your HTML skills with our HTML Quiz!
+                  - paragraph [ref=f2e206]:
+                    - link "Start HTML Quiz!" [ref=f2e207] [cursor=pointer]:
+                      - /url: html_quiz.asp
+                  - separator [ref=f2e208]
+                  - generic [ref=f2e209]:
+                    - heading "Track Your Progress" [level=2] [ref=f2e210]
+                    - generic [ref=f2e212]:
+                      - heading "Create a W3Schools account and get access to more features and learning materials:" [level=6] [ref=f2e213]
+                      - list [ref=f2e214]:
+                        - listitem [ref=f2e215]:
+                          - img "Checkmark" [ref=f2e216]
+                          - text: View your completed tutorials, exercises, and quizzes
+                        - listitem [ref=f2e217]:
+                          - img "Checkmark" [ref=f2e218]
+                          - text: Keep an eye on your progress and daily streaks
+                        - listitem [ref=f2e219]:
+                          - img "Checkmark" [ref=f2e220]
+                          - text: Join the leaderboard and compete with others
+                        - listitem [ref=f2e221]:
+                          - img "Checkmark" [ref=f2e222]
+                          - text: Get your own avatar and unlock new skins
+                        - listitem [ref=f2e223]:
+                          - img "Checkmark" [ref=f2e224]
+                          - text: Create your own personal website
+                      - paragraph [ref=f2e225]:
+                        - link "Sign Up »" [ref=f2e226] [cursor=pointer]:
+                          - /url: https://profile.w3schools.com/sign-up?redirect_url=https%3A%2F%2Fwww.w3schools.com%2Fhtml%2Fdefault.asp
+                    - generic [ref=f2e227]:
+                      - heading "Note" [level=3] [ref=f2e228]
+                      - paragraph [ref=f2e229]: This is an optional feature. You can study at W3Schools without creating an account.
+                    - separator [ref=f2e230]
+                  - heading "HTML References" [level=2] [ref=f2e231]
+                  - paragraph [ref=f2e232]: "At W3Schools you will find complete references about HTML elements, attributes, events, color names, entities, character-sets, URL encoding, language codes, HTTP messages, browser support, and more:"
+                  - generic [ref=f2e233]:
+                    - link "HTML Elements" [ref=f2e235] [cursor=pointer]:
+                      - /url: /tags/default.asp
+                    - link "Browser Support" [ref=f2e237] [cursor=pointer]:
+                      - /url: /tags/ref_html_browsersupport.asp
+                    - link "Attributes" [ref=f2e239] [cursor=pointer]:
+                      - /url: /tags/ref_attributes.asp
+                    - link "Global Attributes" [ref=f2e241] [cursor=pointer]:
+                      - /url: /tags/ref_standardattributes.asp
+                    - link "Event Attributes" [ref=f2e243] [cursor=pointer]:
+                      - /url: /tags/ref_eventattributes.asp
+                    - link "Color Names" [ref=f2e245] [cursor=pointer]:
+                      - /url: /tags/ref_colornames.asp
+                    - link "Canvas" [ref=f2e247] [cursor=pointer]:
+                      - /url: /tags/ref_canvas.asp
+                    - link "Audio/Video DOM" [ref=f2e249] [cursor=pointer]:
+                      - /url: /tags/ref_av_dom.asp
+                    - link "Character Sets" [ref=f2e251] [cursor=pointer]:
+                      - /url: /tags/ref_charactersets.asp
+                    - link "URL Encoding" [ref=f2e253] [cursor=pointer]:
+                      - /url: /tags/ref_urlencode.asp
+                    - link "Language Codes" [ref=f2e255] [cursor=pointer]:
+                      - /url: /tags/ref_language_codes.asp
+                    - link "Country Codes" [ref=f2e257] [cursor=pointer]:
+                      - /url: /tags/ref_country_codes.asp
+                    - link "HTTP Messages" [ref=f2e259] [cursor=pointer]:
+                      - /url: /tags/ref_httpmessages.asp
+                    - link "Px to Em Converter" [ref=f2e261] [cursor=pointer]:
+                      - /url: /tags/ref_pxtoemconversion.asp
+                    - link "Keyboard Shortcuts" [ref=f2e263] [cursor=pointer]:
+                      - /url: /tags/ref_keyboardshortcuts.asp
+                  - generic [ref=f2e266]:
+                    - generic [ref=f2e267]:
+                      - generic [ref=f2e268]: HTML Certification
+                      - heading "Get Certified in HTML" [level=2] [ref=f2e269]
+                      - paragraph [ref=f2e270]: Complete the W3Schools HTML course, strengthen your knowledge, and earn a certificate you can add to your CV, portfolio, and LinkedIn profile.
+                      - link "Get Certified Today" [ref=f2e272] [cursor=pointer]:
+                        - /url: https://campus.w3schools.com/collections/course-catalog/products/html-course
+                    - link "Open certification course page" [ref=f2e276] [cursor=pointer]:
+                      - /url: https://campus.w3schools.com/collections/course-catalog/products/html-course
+                      - generic [ref=f2e277]:
+                        - img "W3Schools HTML Certificate" [ref=f2e278]
+                        - generic:
+                          - img:
+                            - generic: w
+                            - generic: "3"
+                            - generic: s
+                            - generic: c
+                            - generic: h
+                            - generic: o
+                            - generic: o
+                            - generic: l
+                            - generic: s
+                            - generic: C
+                            - generic: E
+                            - generic: R
+                            - generic: T
+                            - generic: I
+                            - generic: F
+                            - generic: I
+                            - generic: E
+                            - generic: D
+                            - generic: .
+                            - generic: "2"
+                            - generic: "0"
+                            - generic: "2"
+                            - generic: "6"
+                  - separator [ref=f2e279]
+                  - generic [ref=f2e280]:
+                    - 'heading "Video: HTML for Beginners" [level=2] [ref=f2e281]'
+                    - link "Tutorial on YouTube Tutorial on YouTube" [ref=f2e282] [cursor=pointer]:
+                      - /url: https://youtu.be/BzYMFd-lQL4
+                      - generic [ref=f2e283]:
+                        - generic:
+                          - generic:
+                            - img "Tutorial on YouTube"
+                        - generic:
+                          - img "Tutorial on YouTube"
+                  - separator [ref=f2e284]
+                  - generic [ref=f2e285]:
+                    - link "❮ Home" [ref=f2e286] [cursor=pointer]:
+                      - /url: /default.asp
+                    - link "Next ❯" [ref=f2e287] [cursor=pointer]:
+                      - /url: html_intro.asp
+                  - link "Sign in to track your progress" [ref=f2e290] [cursor=pointer]:
+                    - /url: https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fpathfinder.w3schools.com&origin=https%3A%2F%2Fwww.w3schools.com%2Fhtml%2Fdefault.asp
+                    - text: Sign in to track progress
+                - generic [ref=f2e291]:
+                  - link "Get Certified Offer" [ref=f2e293] [cursor=pointer]:
+                    - /url: /academy/index.php
+                    - generic [ref=f2e294]:
+                      - img "Get Certified Offer"
+                  - generic [ref=f2e295]:
+                    - heading "COLOR PICKER" [level=4] [ref=f2e296]:
+                      - link "COLOR PICKER" [ref=f2e297] [cursor=pointer]:
+                        - /url: /colors/colors_picker.asp
+                    - link "colorpicker" [ref=f2e298] [cursor=pointer]:
+                      - /url: /colors/colors_picker.asp
+                      - img "colorpicker" [ref=f2e300]
+                  - generic [ref=f2e302]:
+                    - link "" [ref=f2e303] [cursor=pointer]:
+                      - /url: https://www.youtube.com/@w3schools
+                      - generic [ref=f2e304]: 
+                    - link "" [ref=f2e305] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/w3schools.com/
+                      - generic [ref=f2e306]: 
+                    - link "" [ref=f2e307] [cursor=pointer]:
+                      - /url: https://discord.com/invite/w3schools
+                      - generic [ref=f2e308]: 
+                    - link "" [ref=f2e309] [cursor=pointer]:
+                      - /url: https://www.facebook.com/w3schoolscom/
+                      - generic [ref=f2e310]: 
+                    - link "" [ref=f2e311] [cursor=pointer]:
+                      - /url: https://www.instagram.com/w3schools.com_official/
+                      - generic [ref=f2e312]: 
+                    - link "" [ref=f2e313] [cursor=pointer]:
+                      - /url: https://www.tiktok.com/@w3schools.com
+                      - generic [ref=f2e314]: 
+                  - generic [ref=f2e316]:
+                    - paragraph [ref=f2e317]:
+                      - link "REMOVE ADS" [ref=f2e318] [cursor=pointer]:
+                        - /url: https://order.w3schools.com/plans
+                    - iframe [ref=f2e321]:
+                      - generic [active] [ref=f26e1]:
+                        - generic:
+                          - img "Python - Get Started - W3Schools.com" [ref=f26e5]
+                          - generic [ref=f26e7]:
+                            - img [ref=f26e9]
+                            - generic "Python - Get Started - W3Schools.com" [ref=f26e10]
+            - generic [ref=f2e326]:
+              - generic [ref=f2e327]:
+                - link "W3Schools.com" [ref=f2e329] [cursor=pointer]:
+                  - /url: //www.w3schools.com
+                  - generic [ref=f2e330]: 
+                - link "PLUS" [ref=f2e332] [cursor=pointer]:
+                  - /url: https://order.w3schools.com/plans
+                - link "SPACES" [ref=f2e334] [cursor=pointer]:
+                  - /url: /spaces/index.php
+                - link "GET CERTIFIED" [ref=f2e336] [cursor=pointer]:
+                  - /url: https://campus.w3schools.com/collections/certifications
+                - link "FOR TEACHERS" [ref=f2e338] [cursor=pointer]:
+                  - /url: /academy/index.php
+                - link "BOOTCAMPS" [ref=f2e340] [cursor=pointer]:
+                  - /url: /bootcamp/index.php
+                - link "CONTACT US" [ref=f2e342] [cursor=pointer]:
+                  - /url: javascript:void(0);
+              - generic [ref=f2e343]:
+                - generic [ref=f2e344]:
+                  - heading "Top Tutorials" [level=5] [ref=f2e345]
+                  - link "HTML Tutorial" [ref=f2e346] [cursor=pointer]:
+                    - /url: /html/default.asp
+                  - link "CSS Tutorial" [ref=f2e347] [cursor=pointer]:
+                    - /url: /css/default.asp
+                  - link "JavaScript Tutorial" [ref=f2e348] [cursor=pointer]:
+                    - /url: /js/default.asp
+                  - link "How To Tutorial" [ref=f2e349] [cursor=pointer]:
+                    - /url: /howto/default.asp
+                  - link "SQL Tutorial" [ref=f2e350] [cursor=pointer]:
+                    - /url: /sql/default.asp
+                  - link "Python Tutorial" [ref=f2e351] [cursor=pointer]:
+                    - /url: /python/default.asp
+                  - link "W3.CSS Tutorial" [ref=f2e352] [cursor=pointer]:
+                    - /url: /w3css/default.asp
+                  - link "Bootstrap Tutorial" [ref=f2e353] [cursor=pointer]:
+                    - /url: /bootstrap/bootstrap_ver.asp
+                  - link "PHP Tutorial" [ref=f2e354] [cursor=pointer]:
+                    - /url: /php/default.asp
+                  - link "Java Tutorial" [ref=f2e355] [cursor=pointer]:
+                    - /url: /java/default.asp
+                  - link "C++ Tutorial" [ref=f2e356] [cursor=pointer]:
+                    - /url: /cpp/default.asp
+                  - link "jQuery Tutorial" [ref=f2e357] [cursor=pointer]:
+                    - /url: /jquery/default.asp
+                - generic [ref=f2e358]:
+                  - heading "Top References" [level=5] [ref=f2e359]
+                  - link "HTML Reference" [ref=f2e360] [cursor=pointer]:
+                    - /url: /tags/default.asp
+                  - link "CSS Reference" [ref=f2e361] [cursor=pointer]:
+                    - /url: /cssref/index.php
+                  - link "JavaScript Reference" [ref=f2e362] [cursor=pointer]:
+                    - /url: /jsref/default.asp
+                  - link "SQL Reference" [ref=f2e363] [cursor=pointer]:
+                    - /url: /sql/sql_ref_keywords.asp
+                  - link "Python Reference" [ref=f2e364] [cursor=pointer]:
+                    - /url: /python/python_reference.asp
+                  - link "W3.CSS Reference" [ref=f2e365] [cursor=pointer]:
+                    - /url: /w3css/w3css_references.asp
+                  - link "Bootstrap Reference" [ref=f2e366] [cursor=pointer]:
+                    - /url: /bootstrap/bootstrap_ref_all_classes.asp
+                  - link "PHP Reference" [ref=f2e367] [cursor=pointer]:
+                    - /url: /php/php_ref_overview.asp
+                  - link "HTML Colors" [ref=f2e368] [cursor=pointer]:
+                    - /url: /colors/colors_names.asp
+                  - link "Java Reference" [ref=f2e369] [cursor=pointer]:
+                    - /url: /java/java_ref_keywords.asp
+                  - link "AngularJS Reference" [ref=f2e370] [cursor=pointer]:
+                    - /url: /angularjs/angularjs_ref_directives.asp
+                  - link "jQuery Reference" [ref=f2e371] [cursor=pointer]:
+                    - /url: /jquery/jquery_ref_overview.asp
+                - generic [ref=f2e372]:
+                  - heading "Top Examples" [level=5] [ref=f2e373]
+                  - link "HTML Examples" [ref=f2e374] [cursor=pointer]:
+                    - /url: /html/html_examples.asp
+                  - link "CSS Examples" [ref=f2e375] [cursor=pointer]:
+                    - /url: /css/css_examples.asp
+                  - link "JavaScript Examples" [ref=f2e376] [cursor=pointer]:
+                    - /url: /js/js_examples.asp
+                  - link "How To Examples" [ref=f2e377] [cursor=pointer]:
+                    - /url: /howto/default.asp
+                  - link "SQL Examples" [ref=f2e378] [cursor=pointer]:
+                    - /url: /sql/sql_examples.asp
+                  - link "Python Examples" [ref=f2e379] [cursor=pointer]:
+                    - /url: /python/python_examples.asp
+                  - link "W3.CSS Examples" [ref=f2e380] [cursor=pointer]:
+                    - /url: /w3css/w3css_examples.asp
+                  - link "Bootstrap Examples" [ref=f2e381] [cursor=pointer]:
+                    - /url: /bootstrap/bootstrap_examples.asp
+                  - link "PHP Examples" [ref=f2e382] [cursor=pointer]:
+                    - /url: /php/php_examples.asp
+                  - link "Java Examples" [ref=f2e383] [cursor=pointer]:
+                    - /url: /java/java_examples.asp
+                  - link "XML Examples" [ref=f2e384] [cursor=pointer]:
+                    - /url: /xml/xml_examples.asp
+                  - link "jQuery Examples" [ref=f2e385] [cursor=pointer]:
+                    - /url: /jquery/jquery_examples.asp
+                - generic [ref=f2e386]:
+                  - link "Get Certified" [ref=f2e387] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/course-catalog
+                    - heading "Get Certified" [level=5] [ref=f2e388]
+                  - link "HTML Certificate" [ref=f2e389] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/html-certificate
+                  - link "CSS Certificate" [ref=f2e390] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/css-certificate
+                  - link "JavaScript Certificate" [ref=f2e391] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/javascript-certificate
+                  - link "Front End Certificate" [ref=f2e392] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/front-end-certificate
+                  - link "SQL Certificate" [ref=f2e393] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/sql-certificate
+                  - link "Python Certificate" [ref=f2e394] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/python-certificate
+                  - link "PHP Certificate" [ref=f2e395] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/php-certificate
+                  - link "jQuery Certificate" [ref=f2e396] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/jquery-certificate
+                  - link "Java Certificate" [ref=f2e397] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/java-certificate
+                  - link "C++ Certificate" [ref=f2e398] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/c-certificate
+                  - link "C# Certificate" [ref=f2e399] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/c-certificate-1
+                  - link "XML Certificate" [ref=f2e400] [cursor=pointer]:
+                    - /url: https://campus.w3schools.com/collections/certifications/products/xml-certificate
+              - generic [ref=f2e401]:
+                - link "" [ref=f2e402] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@w3schools
+                  - generic [ref=f2e403]: 
+                - link "" [ref=f2e404] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/w3schools.com/
+                  - generic [ref=f2e405]: 
+                - link "" [ref=f2e406] [cursor=pointer]:
+                  - /url: https://discord.com/invite/w3schools
+                  - generic [ref=f2e407]: 
+                - link "" [ref=f2e408] [cursor=pointer]:
+                  - /url: https://www.facebook.com/w3schoolscom/
+                  - generic [ref=f2e409]: 
+                - link "" [ref=f2e410] [cursor=pointer]:
+                  - /url: https://www.instagram.com/w3schools.com_official/
+                  - generic [ref=f2e411]: 
+                - link "FORUM" [ref=f2e412] [cursor=pointer]:
+                  - /url: /forum/index.php
+                - link "ABOUT" [ref=f2e413] [cursor=pointer]:
+                  - /url: /about/default.asp
+                - link "ACADEMY" [ref=f2e414] [cursor=pointer]:
+                  - /url: /academy/index.php
+              - generic [ref=f2e415]:
+                - text: W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our
+                - link "terms of use" [ref=f2e416] [cursor=pointer]:
+                  - /url: /about/about_copyright.asp
+                - text: ", cookies and"
+                - link "privacy policy" [ref=f2e417] [cursor=pointer]:
+                  - /url: /about/about_privacy.asp
+                - text: .
+                - link "Copyright 1999-2026" [ref=f2e418] [cursor=pointer]:
+                  - /url: /about/about_copyright.asp
+                - text: by Refsnes Data. All Rights Reserved.
+                - link "W3Schools is Powered by W3.CSS" [ref=f2e419] [cursor=pointer]:
+                  - /url: //www.w3schools.com/w3css/default.asp
+                - text: .
+            - text: "-->"
+        - separator [ref=e208]
+        - heading "HTML Iframe Syntax" [level=2] [ref=e209]
+        - paragraph [ref=e210]:
+          - text: The HTML
+          - code [ref=e211]: <iframe>
+          - text: tag specifies an inline frame.
+        - paragraph [ref=e212]: An inline frame is used to embed another document within the current HTML document.
+        - generic [ref=e213]:
+          - heading "Syntax" [level=3] [ref=e214]
+          - generic [ref=e215]:
+            - generic [ref=e216]:
+              - text: <iframe
+              - generic [ref=e217]:
+                - text: src
+                - generic [ref=e218]: ="url"
+                - text: title
+                - generic [ref=e219]:
+                  - text: ="
+                  - emphasis [ref=e220]: description
+                  - text: "\""
+              - text: ">"
+            - generic [ref=e221]: </iframe>
+        - paragraph [ref=e222]:
+          - strong [ref=e223]: "Tip:"
+          - text: It is a good practice to always include a
+          - code [ref=e224]: title
+          - text: attribute for the
+          - code [ref=e225]: <iframe>
+          - text: . This is used by screen readers to read out what the content of the iframe is.
+        - separator [ref=e226]
+        - heading "Iframe - Set Height and Width" [level=2] [ref=e227]
+        - paragraph [ref=e228]:
+          - text: Use the
+          - code [ref=e229]: height
+          - text: and
+          - code [ref=e230]: width
+          - text: attributes to specify the size of the iframe.
+        - paragraph [ref=e231]: "The height and width are specified in pixels by default:"
+        - generic [ref=e232]:
+          - heading "Example" [level=3] [ref=e233]
+          - generic [ref=e234]:
+            - generic [ref=e235]:
+              - text: <iframe
+              - generic [ref=e236]: src="demo_iframe.htm" height="200" width="300" title="Iframe Example"
+              - text: ">"
+            - generic [ref=e237]: </iframe>
+          - link "Try it Yourself »" [ref=e238] [cursor=pointer]:
+            - /url: tryit.asp?filename=tryhtml_iframe_height_width
+        - paragraph [ref=e239]:
+          - text: Or you can add the
+          - code [ref=e240]: style
+          - text: attribute and use the CSS
+          - code [ref=e241]: height
+          - text: and
+          - code [ref=e242]: width
+          - text: "properties:"
+        - generic [ref=e243]:
+          - heading "Example" [level=3] [ref=e244]
+          - generic [ref=e245]:
+            - generic [ref=e246]:
+              - text: <iframe
+              - generic [ref=e247]: src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"
+              - text: ">"
+            - generic [ref=e248]: </iframe>
+          - link "Try it Yourself »" [ref=e249] [cursor=pointer]:
+            - /url: tryit.asp?filename=tryhtml_iframe_height_width_css
+        - separator [ref=e250]
+        - paragraph [ref=e253]:
+          - link "REMOVE ADS" [ref=e254] [cursor=pointer]:
+            - /url: https://order.w3schools.com/plans
+        - separator [ref=e255]
+        - heading "Iframe - Remove the Border" [level=2] [ref=e256]
+        - paragraph [ref=e257]: By default, an iframe has a border around it.
+        - paragraph [ref=e258]:
+          - text: To remove the border, add the
+          - code [ref=e259]: style
+          - text: attribute and use the CSS
+          - code [ref=e260]: border
+          - text: "property:"
+        - generic [ref=e261]:
+          - heading "Example" [level=3] [ref=e262]
+          - generic [ref=e263]:
+            - generic [ref=e264]:
+              - text: <iframe
+              - generic [ref=e265]: src="demo_iframe.htm" style="border:none;" title="Iframe Example"
+              - text: ">"
+            - generic [ref=e266]: </iframe>
+          - link "Try it Yourself »" [ref=e267] [cursor=pointer]:
+            - /url: tryit.asp?filename=tryhtml_iframe_frameborder
+        - paragraph [ref=e268]: "With CSS, you can also change the size, style and color of the iframe's border:"
+        - generic [ref=e269]:
+          - heading "Example" [level=3] [ref=e270]
+          - generic [ref=e271]:
+            - generic [ref=e272]:
+              - text: <iframe
+              - generic [ref=e273]: src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"
+              - text: ">"
+            - generic [ref=e274]: </iframe>
+          - link "Try it Yourself »" [ref=e275] [cursor=pointer]:
+            - /url: tryit.asp?filename=tryhtml_iframe_border2
+        - separator [ref=e276]
+        - heading "Iframe - Target for a Link" [level=2] [ref=e277]
+        - paragraph [ref=e278]: An iframe can be used as the target frame for a link.
+        - paragraph [ref=e279]:
+          - text: The
+          - code [ref=e280]: target
+          - text: attribute of the link must refer to the
+          - code [ref=e281]: name
+          - text: "attribute of the iframe:"
+        - generic [ref=e282]:
+          - heading "Example" [level=3] [ref=e283]
+          - generic [ref=e284]:
+            - generic [ref=e285]:
+              - text: <iframe
+              - generic [ref=e286]: src="demo_iframe.htm" name="iframe_a" title="Iframe Example"
+              - text: ">"
+            - generic [ref=e287]: </iframe>
+            - generic [ref=e288]: <p>
+            - generic [ref=e289]:
+              - text: <a
+              - generic [ref=e290]: href="https://www.w3schools.com" target="iframe_a"
+              - text: ">"
+            - text: W3Schools.com
+            - generic [ref=e291]: </a>
+            - generic [ref=e292]: </p>
+          - link "Try it Yourself »" [ref=e293] [cursor=pointer]:
+            - /url: tryit.asp?filename=tryhtml_iframe_target
+        - paragraph [ref=e295]:
+          - link "REMOVE ADS" [ref=e296] [cursor=pointer]:
+            - /url: https://order.w3schools.com/plans
+        - separator [ref=e297]
+        - heading "Chapter Summary" [level=2] [ref=e298]
+        - list [ref=e299]:
+          - listitem [ref=e300]:
+            - text: The HTML
+            - code [ref=e301]: <iframe>
+            - text: tag specifies an inline frame
+          - listitem [ref=e302]:
+            - text: The
+            - code [ref=e303]: src
+            - text: attribute defines the URL of the page to embed
+          - listitem [ref=e304]:
+            - text: Always include a
+            - code [ref=e305]: title
+            - text: attribute (for screen readers)
+          - listitem [ref=e306]:
+            - text: The
+            - code [ref=e307]: height
+            - text: and
+            - code [ref=e308]: width
+            - text: attributes specify the size of the iframe
+          - listitem [ref=e309]:
+            - text: Use
+            - code [ref=e310]: border:none;
+            - text: to remove the border around the iframe
+        - separator [ref=e311]
+        - generic [ref=e312]:
+          - heading "Exercise ?" [level=2] [ref=e313]:
+            - text: Exercise
+            - generic [ref=e315] [cursor=pointer]: "?"
+          - paragraph [ref=e316]: In which IFRAME attribute can we specify an URL?
+          - generic [ref=e317]:
+            - generic [ref=e318] [cursor=pointer]:
+              - radio "href" [ref=e319]
+              - code [ref=e321]: href
+            - generic [ref=e322] [cursor=pointer]:
+              - radio "src" [ref=e323]
+              - code [ref=e325]: src
+            - generic [ref=e326] [cursor=pointer]:
+              - radio "url" [ref=e327]
+              - code [ref=e329]: url
+            - button "Submit Answer »" [ref=e330] [cursor=pointer]
+        - separator [ref=e331]
+        - heading "HTML iframe Tag" [level=2] [ref=e332]
+        - table [ref=e333]:
+          - rowgroup [ref=e334]:
+            - row "Tag Description" [ref=e335]:
+              - columnheader "Tag" [ref=e336]
+              - columnheader "Description" [ref=e337]
+            - row "<iframe> Defines an inline frame" [ref=e338]:
+              - cell "<iframe>" [ref=e339]:
+                - link "<iframe>" [ref=e340] [cursor=pointer]:
+                  - /url: /tags/tag_iframe.asp
+              - cell "Defines an inline frame" [ref=e341]
+        - paragraph [ref=e343]:
+          - text: For a complete list of all available HTML tags, visit our
+          - link "HTML Tag Reference" [ref=e344] [cursor=pointer]:
+            - /url: /tags/default.asp
+          - text: .
+        - separator [ref=e345]
+        - generic [ref=e346]:
+          - 'heading "Video: HTML Iframe" [level=2] [ref=e347]'
+          - link "Tutorial on YouTube Tutorial on YouTube" [ref=e348] [cursor=pointer]:
+            - /url: https://youtu.be/qP23O70ve7k&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s
+            - generic [ref=e349]:
+              - generic:
+                - generic:
+                  - img "Tutorial on YouTube"
+              - generic:
+                - img "Tutorial on YouTube"
+        - separator [ref=e350]
+        - generic [ref=e351]:
+          - link "❮ Previous" [ref=e352] [cursor=pointer]:
+            - /url: html_challenges_buttons.asp
+          - link "Next ❯" [ref=e353] [cursor=pointer]:
+            - /url: html_challenges_iframes.asp
+        - link "Sign in to track your progress" [ref=e356] [cursor=pointer]:
+          - /url: https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fpathfinder.w3schools.com&origin=https%3A%2F%2Fwww.w3schools.com%2Fhtml%2Fhtml_iframe.asp
+          - text: Sign in to track progress
+      - generic [ref=e357]:
+        - link "Get Certified Offer" [ref=e359] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/products/w3schools-full-access-course
+          - img "Get Certified Offer" [ref=e361]
+        - generic [ref=e362]:
+          - heading "COLOR PICKER" [level=4] [ref=e363]:
+            - link "COLOR PICKER" [ref=e364] [cursor=pointer]:
+              - /url: /colors/colors_picker.asp
+          - link "colorpicker" [ref=e365] [cursor=pointer]:
+            - /url: /colors/colors_picker.asp
+            - img "colorpicker" [ref=e367]
+        - generic [ref=e369]:
+          - link "" [ref=e370] [cursor=pointer]:
+            - /url: https://www.youtube.com/@w3schools
+            - generic [ref=e371]: 
+          - link "" [ref=e372] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/w3schools.com/
+            - generic [ref=e373]: 
+          - link "" [ref=e374] [cursor=pointer]:
+            - /url: https://discord.com/invite/w3schools
+            - generic [ref=e375]: 
+          - link "" [ref=e376] [cursor=pointer]:
+            - /url: https://www.facebook.com/w3schoolscom/
+            - generic [ref=e377]: 
+          - link "" [ref=e378] [cursor=pointer]:
+            - /url: https://www.instagram.com/w3schools.com_official/
+            - generic [ref=e379]: 
+          - link "" [ref=e380] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@w3schools.com
+            - generic [ref=e381]: 
+        - generic [ref=e383]:
+          - paragraph [ref=e384]:
+            - link "REMOVE ADS" [ref=e385] [cursor=pointer]:
+              - /url: https://order.w3schools.com/plans
+          - iframe [ref=e388]:
+            - generic [active] [ref=f27e1]:
+              - generic:
+                - img "Python - Syntax - W3Schools.com" [ref=f27e5]
+                - img [ref=f27e9]
+          - iframe [ref=e391]
+  - generic [ref=e395]:
+    - generic [ref=e396]:
+      - link "W3Schools.com" [ref=e398] [cursor=pointer]:
+        - /url: //www.w3schools.com
+        - generic [ref=e399]: 
+      - link "PLUS" [ref=e401] [cursor=pointer]:
+        - /url: https://order.w3schools.com/plans
+      - link "SPACES" [ref=e403] [cursor=pointer]:
+        - /url: /spaces/index.php
+      - link "GET CERTIFIED" [ref=e405] [cursor=pointer]:
+        - /url: https://campus.w3schools.com/collections/certifications
+      - link "FOR TEACHERS" [ref=e407] [cursor=pointer]:
+        - /url: /academy/index.php
+      - link "BOOTCAMPS" [ref=e409] [cursor=pointer]:
+        - /url: /bootcamp/index.php
+      - link "CONTACT US" [ref=e411] [cursor=pointer]:
+        - /url: javascript:void(0);
+    - generic [ref=e412]:
+      - generic [ref=e413]:
+        - heading "Top Tutorials" [level=5] [ref=e414]
+        - link "HTML Tutorial" [ref=e415] [cursor=pointer]:
+          - /url: /html/default.asp
+        - link "CSS Tutorial" [ref=e416] [cursor=pointer]:
+          - /url: /css/default.asp
+        - link "JavaScript Tutorial" [ref=e417] [cursor=pointer]:
+          - /url: /js/default.asp
+        - link "How To Tutorial" [ref=e418] [cursor=pointer]:
+          - /url: /howto/default.asp
+        - link "SQL Tutorial" [ref=e419] [cursor=pointer]:
+          - /url: /sql/default.asp
+        - link "Python Tutorial" [ref=e420] [cursor=pointer]:
+          - /url: /python/default.asp
+        - link "W3.CSS Tutorial" [ref=e421] [cursor=pointer]:
+          - /url: /w3css/default.asp
+        - link "Bootstrap Tutorial" [ref=e422] [cursor=pointer]:
+          - /url: /bootstrap/bootstrap_ver.asp
+        - link "PHP Tutorial" [ref=e423] [cursor=pointer]:
+          - /url: /php/default.asp
+        - link "Java Tutorial" [ref=e424] [cursor=pointer]:
+          - /url: /java/default.asp
+        - link "C++ Tutorial" [ref=e425] [cursor=pointer]:
+          - /url: /cpp/default.asp
+        - link "jQuery Tutorial" [ref=e426] [cursor=pointer]:
+          - /url: /jquery/default.asp
+      - generic [ref=e427]:
+        - heading "Top References" [level=5] [ref=e428]
+        - link "HTML Reference" [ref=e429] [cursor=pointer]:
+          - /url: /tags/default.asp
+        - link "CSS Reference" [ref=e430] [cursor=pointer]:
+          - /url: /cssref/index.php
+        - link "JavaScript Reference" [ref=e431] [cursor=pointer]:
+          - /url: /jsref/default.asp
+        - link "SQL Reference" [ref=e432] [cursor=pointer]:
+          - /url: /sql/sql_ref_keywords.asp
+        - link "Python Reference" [ref=e433] [cursor=pointer]:
+          - /url: /python/python_reference.asp
+        - link "W3.CSS Reference" [ref=e434] [cursor=pointer]:
+          - /url: /w3css/w3css_references.asp
+        - link "Bootstrap Reference" [ref=e435] [cursor=pointer]:
+          - /url: /bootstrap/bootstrap_ref_all_classes.asp
+        - link "PHP Reference" [ref=e436] [cursor=pointer]:
+          - /url: /php/php_ref_overview.asp
+        - link "HTML Colors" [ref=e437] [cursor=pointer]:
+          - /url: /colors/colors_names.asp
+        - link "Java Reference" [ref=e438] [cursor=pointer]:
+          - /url: /java/java_ref_keywords.asp
+        - link "AngularJS Reference" [ref=e439] [cursor=pointer]:
+          - /url: /angularjs/angularjs_ref_directives.asp
+        - link "jQuery Reference" [ref=e440] [cursor=pointer]:
+          - /url: /jquery/jquery_ref_overview.asp
+      - generic [ref=e441]:
+        - heading "Top Examples" [level=5] [ref=e442]
+        - link "HTML Examples" [ref=e443] [cursor=pointer]:
+          - /url: /html/html_examples.asp
+        - link "CSS Examples" [ref=e444] [cursor=pointer]:
+          - /url: /css/css_examples.asp
+        - link "JavaScript Examples" [ref=e445] [cursor=pointer]:
+          - /url: /js/js_examples.asp
+        - link "How To Examples" [ref=e446] [cursor=pointer]:
+          - /url: /howto/default.asp
+        - link "SQL Examples" [ref=e447] [cursor=pointer]:
+          - /url: /sql/sql_examples.asp
+        - link "Python Examples" [ref=e448] [cursor=pointer]:
+          - /url: /python/python_examples.asp
+        - link "W3.CSS Examples" [ref=e449] [cursor=pointer]:
+          - /url: /w3css/w3css_examples.asp
+        - link "Bootstrap Examples" [ref=e450] [cursor=pointer]:
+          - /url: /bootstrap/bootstrap_examples.asp
+        - link "PHP Examples" [ref=e451] [cursor=pointer]:
+          - /url: /php/php_examples.asp
+        - link "Java Examples" [ref=e452] [cursor=pointer]:
+          - /url: /java/java_examples.asp
+        - link "XML Examples" [ref=e453] [cursor=pointer]:
+          - /url: /xml/xml_examples.asp
+        - link "jQuery Examples" [ref=e454] [cursor=pointer]:
+          - /url: /jquery/jquery_examples.asp
+      - generic [ref=e455]:
+        - link "Get Certified" [ref=e456] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/course-catalog
+          - heading "Get Certified" [level=5] [ref=e457]
+        - link "HTML Certificate" [ref=e458] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/html-certificate
+        - link "CSS Certificate" [ref=e459] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/css-certificate
+        - link "JavaScript Certificate" [ref=e460] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/javascript-certificate
+        - link "Front End Certificate" [ref=e461] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/front-end-certificate
+        - link "SQL Certificate" [ref=e462] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/sql-certificate
+        - link "Python Certificate" [ref=e463] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/python-certificate
+        - link "PHP Certificate" [ref=e464] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/php-certificate
+        - link "jQuery Certificate" [ref=e465] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/jquery-certificate
+        - link "Java Certificate" [ref=e466] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/java-certificate
+        - link "C++ Certificate" [ref=e467] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/c-certificate
+        - link "C# Certificate" [ref=e468] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/c-certificate-1
+        - link "XML Certificate" [ref=e469] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/xml-certificate
+    - generic [ref=e470]:
+      - link "" [ref=e471] [cursor=pointer]:
+        - /url: https://www.youtube.com/@w3schools
+        - generic [ref=e472]: 
+      - link "" [ref=e473] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/w3schools.com/
+        - generic [ref=e474]: 
+      - link "" [ref=e475] [cursor=pointer]:
+        - /url: https://discord.com/invite/w3schools
+        - generic [ref=e476]: 
+      - link "" [ref=e477] [cursor=pointer]:
+        - /url: https://www.facebook.com/w3schoolscom/
+        - generic [ref=e478]: 
+      - link "" [ref=e479] [cursor=pointer]:
+        - /url: https://www.instagram.com/w3schools.com_official/
+        - generic [ref=e480]: 
+      - link "FORUM" [ref=e481] [cursor=pointer]:
+        - /url: /forum/index.php
+      - link "ABOUT" [ref=e482] [cursor=pointer]:
+        - /url: /about/default.asp
+      - link "ACADEMY" [ref=e483] [cursor=pointer]:
+        - /url: /academy/index.php
+    - generic [ref=e484]:
+      - text: W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our
+      - link "terms of use" [ref=e485] [cursor=pointer]:
+        - /url: /about/about_copyright.asp
+      - text: ", cookies and"
+      - link "privacy policy" [ref=e486] [cursor=pointer]:
+        - /url: /about/about_privacy.asp
+      - text: .
+      - link "Copyright 1999-2026" [ref=e487] [cursor=pointer]:
+        - /url: /about/about_copyright.asp
+      - text: by Refsnes Data. All Rights Reserved.
+      - link "W3Schools is Powered by W3.CSS" [ref=e488] [cursor=pointer]:
+        - /url: //www.w3schools.com/w3css/default.asp
+      - text: .
+  - text: "-->"
+```
